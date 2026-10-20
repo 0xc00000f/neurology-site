@@ -1,2 +1,26 @@
+# Operating system and editor files
 .DS_Store
-_site/
+.idea/
+.vscode/
+
+# Local previews, reports, and imported source material
+/_site/
+/.taste-skill/
+/DESIGN-REPORT.md
+/bar-colors.png
+/content/
+/scripts/
+
+# Superseded icons (the website uses assets/brand/)
+/assets/apple-touch-icon.png
+/assets/favicon-32.png
+/assets/favicon-source.png
+
+# Brand source images, unused variants, and generation notes
+/assets/brand/README.md
+/assets/brand/generation-prompt.txt
+/assets/brand/neurology-concilium-avatar.png
+/assets/brand/neurology-concilium-logo.png
+/assets/brand/neurology-concilium-mark.png
+/assets/brand/favicon-16.png
+/assets/brand/favicon-32.png
