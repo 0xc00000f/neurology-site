@@ -10,7 +10,7 @@ document.addEventListener('keydown',e=>{if(e.key==='Escape'&&smallScreen.matches
 const picker=document.querySelector('.format-picker');picker.hidden=false;
 const desktop=matchMedia('(min-width:1001px)');
 const status=document.querySelector('.format-status');
-const formatNames={inperson:'Очный приём: DOCMED и DOCDETI.',online:'Онлайн-консультация: Express Doctor.'};
+const formatNames={inperson:'Очный приём: DOCMED.',online:'Онлайн-консультация: Express Doctor.'};
 function selectFormat(value){picker.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.format===value)));document.querySelectorAll('[data-booking]').forEach(el=>el.classList.toggle('is-selected',el.dataset.booking===value));status.textContent=formatNames[value]}
 picker.addEventListener('click',e=>{const b=e.target.closest('button');if(b)selectFormat(b.dataset.format)});
 function applyDefaultFormat(){if(desktop.matches){selectFormat('inperson')}else{document.querySelectorAll('[data-booking]').forEach(el=>el.classList.remove('is-selected'));status.textContent=''}}
